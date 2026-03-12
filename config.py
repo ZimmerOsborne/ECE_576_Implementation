@@ -59,6 +59,14 @@ SUPPORTED_TIME_BINS = ["1min", "5min", "10min", "15min", "30min", "1h"]
 # --- Loading defaults ---
 DEFAULT_CHUNK_SIZE = 100_000
 
+# --- Deviation defaults ---
+DEFAULT_M_WINDOW = 50
+DEFAULT_H_WINDOW = 5
+DEFAULT_M_WEIGHT = 1
+DEFAULT_H_WEIGHT = 1
+HIGH_CONFIDENCE_THRESHOLD = 2
+LOW_CONFIDENCE_THRESHOLD = 1.25
+
 
 @dataclass
 class IngestionConfig:
